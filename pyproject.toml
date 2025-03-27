@@ -1,0 +1,28 @@
+[project]
+name = "monitormaestro"
+version = "0.0.1"
+description = "一个自动化监控系统"
+authors = [
+    {name = "Apauto-to-all",email = "apautotoall@outlook.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "requests (>=2.32.3,<3.0.0)",
+    "pyside6 (>=6.8.2.1,<7.0.0.0)",
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "tuna"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+priority = "primary"
+
+# 添加备用源
+[[tool.poetry.source]]
+name = "aliyun"
+url = "https://mirrors.aliyun.com/pypi/simple/"
+priority = "supplemental"
