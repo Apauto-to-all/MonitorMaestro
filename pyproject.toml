@@ -26,3 +26,6 @@ priority = "primary"
 name = "aliyun"
 url = "https://mirrors.aliyun.com/pypi/simple/"
 priority = "supplemental"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
